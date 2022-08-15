@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 類型 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- 文字與邊框的間距 -->
+    <padding
+        android:top="5dp"
+        android:right="5dp"
+        android:bottom="5dp"
+        android:left="5dp" />
+    <!-- 形狀大小 -->
+    <size
+        android:width="140dp"
+        android:height="140dp" />
+    <!-- 邊框線 -->
+    <stroke
+        android:width="1dp"
+        android:color="@android:color/transparent"
+        android:dashGap="2dp"
+        android:dashWidth="5dp" />
+
+</shape>
+

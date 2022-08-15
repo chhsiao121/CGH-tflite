@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wordcard_layout"
+    android:layout_width="match_parent"
+    android:layout_height="62dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/secondary_color"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_wordcard1"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+
+                android:text="@string/wordcard01_1"
+                android:textSize="50sp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_wordcard1_recode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/oval_recode"
+                        android:contentDescription="@string/record_btn"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_baseline_mic_24" />
+
+                    <ImageButton
+                        android:id="@+id/btn_wordcard1_play"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/oval_recode"
+                        android:contentDescription="@string/play_btn"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_baseline_play_arrow_24" />
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress_wordcard1"
+                    style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
