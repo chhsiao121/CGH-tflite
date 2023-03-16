@@ -22,10 +22,12 @@ android {
         python {
             pip {
 //                buildPython "C:\\Users\\1q099\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
-                install "librosa"
+//                install "librosa"
                 install  "scikit-image"
                 install "auto-py-to-exe"
-//                install "librosa==0.7.2"
+                install "numba==0.48.0"
+                install "resampy==0.2.2"
+                install "librosa==0.7.2"
             }
         }
     }
